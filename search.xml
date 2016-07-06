@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title><![CDATA[记一次Intellij IDEA Debug 断点打不上的诡异现象]]></title>
+      <url>http://yoursite.com/2016/07/06/%E8%AE%B0%E4%B8%80%E6%AC%A1Intellij-IDEA-Debug-%E6%96%AD%E7%82%B9%E6%89%93%E4%B8%8D%E4%B8%8A%E7%9A%84%E8%AF%A1%E5%BC%82%E7%8E%B0%E8%B1%A1/</url>
+      <content type="html"><![CDATA[<p>话说IDEA真的不省资源，真的不必Eclipse占用的资源少，也怪我平时电脑程序开的多，IDEA也是同时开好几个工程，总是用着用着就有点卡卡的，唉，电脑烂没办法</p>
+<hr>
+<p>以上是废话，也是铺垫，那一天就是这个卡卡的状态下调试着程序，打了几个断点，一次次的跑着，突然发现断点打不上了，点击左边空白就是不出小红点，搞的我措手不及….</p>
+<p>难道是太卡了，于是我果断重启IDEA 不好使</p>
+<p>电脑不行了，不是说mac可以不重启稳定的运行很久么，重启下电脑… 果断还是不行呢</p>
+<p>这是为什么呢 难道IDEA 挂掉了 也不像 毕竟其他功能都看着没什么问题啊 难道要重装一下IDEA </p>
+<p>额</p>
+<p>然后我又切到root用户下打开IDEA试了一下 居然可以<br>（不过这好像没啥联系啊）</p>
+<p>切回来 突然想到 刚刚打开了一个.conf的时候好像点了一下装了个什么插件，速度打开plugins瞅了一眼 多了一个 PHP的插件</p>
+<p>果断卸载 重启IDEA </p>
+<p>然后….就好了……</p>
+<p>我也不知道 跟这个PHP的插件有多大关系 我也没再装一下这个插件验证，反正就是好了…唉</p>
+<p>这文章还真没啥技术含量</p>
+<p>放张eason镇镇</p>
+<p><img src="http://7xw1y2.com1.z0.glb.clouddn.com/eason.jpg" alt="eason"></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo + github 搭建博客]]></title>
       <url>http://yoursite.com/2016/07/06/hexo-github-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<p>等我找个好用的markdown 编辑器</p>
