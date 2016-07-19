@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="记," />
+  <meta name="keywords" content="JAVA," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="有样学样">
+<meta name="description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java.lang.IllegalArgumentException: Illegal group reference">
 <meta property="og:url" content="http://yoursite.com/2016/07/19/java-lang-IllegalArgumentException-Illegal-group-reference/index.html">
 <meta property="og:site_name" content="钱是身外之物,但是我想要 | 俗">
-<meta property="og:description" content="有样学样">
-<meta property="og:updated_time" content="2016-07-19T06:54:08.000Z">
+<meta property="og:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符">
+<meta property="og:updated_time" content="2016-07-19T06:56:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java.lang.IllegalArgumentException: Illegal group reference">
-<meta name="twitter:description" content="有样学样">
+<meta name="twitter:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符">
 
 
 
@@ -306,7 +306,9 @@
       
 
       
-        
+        <p>最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥<br>原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符号」字符时会报这个异常，由于replace中的第一个参数 regex 支持 正则表达式，会以「dollar符号」进行分组，所以就报错了….</p>
+<p>但是 这又跟sql有啥关系呢 ，想了想应该是mybatis中的一个打印sql拦截器有关了，查了查代码，果然</p>
+
       
     </div>
 
@@ -327,7 +329,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/记/" rel="tag">#记</a>
+            <a href="/tags/JAVA/" rel="tag">#JAVA</a>
           
         </div>
       
