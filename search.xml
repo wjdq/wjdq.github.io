@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[java.lang.IllegalArgumentException: Illegal group reference]]></title>
+      <url>http://yoursite.com/2016/07/19/java-lang-IllegalArgumentException-Illegal-group-reference/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Intellij IDEA MAVEN cannot reconnect]]></title>
       <url>http://yoursite.com/2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/</url>
       <content type="html"><![CDATA[<p>最近总是IDEA 总是遇到 pom文件里 &lt;project 节点上 报错 cannot reconnect</p>
