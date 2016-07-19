@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title><![CDATA[Intellij IDEA MAVEN cannot reconnect]]></title>
+      <url>http://yoursite.com/2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/</url>
+      <content type="html"><![CDATA[<p>最近总是IDEA 总是遇到 pom文件里 &lt;project 节点上 报错 cannot reconnect</p>
+<p>不知道这是怎么个错误 上网上搜了搜 在stackoverflow上 看到个方法</p>
+<p><img src="http://7xw1y2.com1.z0.glb.clouddn.com/resove.png" alt="方法"></p>
+<p>我按照上面的步骤搞了搞 也不知道具体哪一步生效了 好囧</p>
+<p>现在我基本就按照第一步搞一下<br>还不行的话就在 maven工具栏的地方reimport 基本可以解决问题。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[记一次Intellij IDEA Debug 断点打不上的诡异现象]]></title>
       <url>http://yoursite.com/2016/07/06/%E8%AE%B0%E4%B8%80%E6%AC%A1Intellij-IDEA-Debug-%E6%96%AD%E7%82%B9%E6%89%93%E4%B8%8D%E4%B8%8A%E7%9A%84%E8%AF%A1%E5%BC%82%E7%8E%B0%E8%B1%A1/</url>
       <content type="html"><![CDATA[<p>话说IDEA真的不省资源，真的不必Eclipse占用的资源少，也怪我平时电脑程序开的多，IDEA也是同时开好几个工程，总是用着用着就有点卡卡的，唉，电脑烂没办法</p>
