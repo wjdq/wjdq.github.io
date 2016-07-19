@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/07/19/Illegal-group-reference/index.html">
 <meta property="og:site_name" content="钱是身外之物,但是我想要 | 俗">
 <meta property="og:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar">
-<meta property="og:updated_time" content="2016-07-19T07:32:05.000Z">
+<meta property="og:updated_time" content="2016-07-19T07:34:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Illegal group reference">
 <meta name="twitter:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar">
@@ -308,6 +308,10 @@
       
         <p>最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符号」字符时会报这个异常，由于replace中的第一个参数 regex 支持 正则表达式，会以「dollar符号」进行分组，所以就报错了…<br>但是 这又跟sql有啥关系呢 ，想了想应该是mybatis中的一个打印sql拦截器有关了，查了查代码，果然</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">String parameterValue = getParameterValue(parameterObject);</div><div class="line">sql = sql.replaceFirst(<span class="string">"\\?"</span>, parameterValue);</div></pre></td></tr></table></figure>
+<p>那就是这里了 在替换占位符？的时候 后面的值里带有「dollar符号」了</p>
+<p>修改一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">String parameterValue = getParameterValue(parameterObject);</div><div class="line">parameterValue = parameterValue.replaceAll(&quot;\\$&quot;, DOLLAR);</div><div class="line">sql = sql.replaceFirst(&quot;\\?&quot;, parameterValue);</div><div class="line">sql = sql.replaceAll(DOLLAR, &quot;\\$&quot;);</div></pre></td></tr></table></figure>
+<p>呼…</p>
 
       
     </div>
