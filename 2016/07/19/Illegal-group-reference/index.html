@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="有样学样">
-<meta property="og:type" content="website">
-<meta property="og:title" content="钱是身外之物,但是我想要 | 俗">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Illegal group reference">
+<meta property="og:url" content="http://yoursite.com/2016/07/19/Illegal-group-reference/index.html">
 <meta property="og:site_name" content="钱是身外之物,但是我想要 | 俗">
-<meta property="og:description" content="有样学样">
+<meta property="og:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar">
+<meta property="og:updated_time" content="2016-07-19T07:30:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="钱是身外之物,但是我想要 | 俗">
-<meta name="twitter:description" content="有样学样">
+<meta name="twitter:title" content="Illegal group reference">
+<meta name="twitter:description" content="最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/19/Illegal-group-reference/"/>
 
-  <title> 钱是身外之物,但是我想要 | 俗 </title>
+  <title> Illegal group reference | 钱是身外之物,但是我想要 | 俗 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -260,10 +259,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/07/19/Illegal-group-reference/" itemprop="url">
-                  Illegal group reference
-                </a>
+                Illegal group reference
               
             
           </h1>
@@ -310,361 +306,83 @@
       
 
       
-        
-          
-            <p>最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符号」字符时会报这个异常，由于replace中的第一个参数 regex 支持 正则表达式，会以「dollar符号」进行分组，所以就报错了…<br>但是 这又跟sql有啥关系呢 ，想了想应该是mybatis中的一个打印sql拦截器有关了，查了查代码，果然</p>
+        <p>最近碰到java.lang.IllegalArgumentException: Illegal group reference 异常，看了一下日志 看着是在执行sql的时候抛出的异常，这就奇怪了这和sql有什么关系呢，跑回去检查了一下代码，应该也没啥问题啊，还是google一下这个异常是个啥,原来 这个异常是在String.replace的时候在第二个参数replacement中含有「dollar符号」字符时会报这个异常，由于replace中的第一个参数 regex 支持 正则表达式，会以「dollar符号」进行分组，所以就报错了…<br>但是 这又跟sql有啥关系呢 ，想了想应该是mybatis中的一个打印sql拦截器有关了，查了查代码，果然</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/" itemprop="url">
-                  Intellij IDEA MAVEN cannot reconnect
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-19T11:10:56+08:00" content="2016-07-19">
-              2016-07-19
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/java/" rel="tag">#java</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>最近总是IDEA 总是遇到 pom文件里 &lt;project 节点上 报错 cannot reconnect</p>
-<p>不知道这是怎么个错误 上网上搜了搜 在stackoverflow上 看到个方法</p>
-<p><img src="http://7xw1y2.com1.z0.glb.clouddn.com/resove.png" alt="方法"></p>
-<p>我按照上面的步骤搞了搞 也不知道具体哪一步生效了 好囧</p>
-<p>现在我基本就按照第一步搞一下<br>还不行的话就在 maven工具栏的地方reimport 基本可以解决问题。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/07/19/Intellij-IDEA-MAVEN-cannot-reconnect/" rel="next" title="Intellij IDEA MAVEN cannot reconnect">
+                <i class="fa fa-chevron-left"></i> Intellij IDEA MAVEN cannot reconnect
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/07/06/记一次Intellij-IDEA-Debug-断点打不上的诡异现象/" itemprop="url">
-                  记一次Intellij IDEA Debug 断点打不上的诡异现象
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-06T21:04:42+08:00" content="2016-07-06">
-              2016-07-06
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/06/记一次Intellij-IDEA-Debug-断点打不上的诡异现象/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/06/记一次Intellij-IDEA-Debug-断点打不上的诡异现象/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>话说IDEA真的不省资源，真的不必Eclipse占用的资源少，也怪我平时电脑程序开的多，IDEA也是同时开好几个工程，总是用着用着就有点卡卡的，唉，电脑烂没办法</p>
-<hr>
-<p>以上是废话，也是铺垫，那一天就是这个卡卡的状态下调试着程序，打了几个断点，一次次的跑着，突然发现断点打不上了，点击左边空白就是不出小红点，搞的我措手不及….</p>
-<p>难道是太卡了，于是我果断重启IDEA 不好使</p>
-<p>电脑不行了，不是说mac可以不重启稳定的运行很久么，重启下电脑… 果断还是不行呢</p>
-<p>这是为什么呢 难道IDEA 挂掉了 也不像 毕竟其他功能都看着没什么问题啊 难道要重装一下IDEA </p>
-<p>额</p>
-<p>然后我又切到root用户下打开IDEA试了一下 居然可以<br>（不过这好像没啥联系啊）</p>
-<p>切回来 突然想到 刚刚打开了一个.conf的时候好像点了一下装了个什么插件，速度打开plugins瞅了一眼 多了一个 PHP的插件</p>
-<p>果断卸载 重启IDEA </p>
-<p>然后….就好了……</p>
-<p>我也不知道 跟这个PHP的插件有多大关系 我也没再装一下这个插件验证，反正就是好了…唉</p>
-<p>这文章还真没啥技术含量</p>
-<p>放张eason镇镇</p>
-<p><img src="http://7xw1y2.com1.z0.glb.clouddn.com/eason.jpg" alt="eason"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/06/hexo-github-搭建博客/" itemprop="url">
-                  hexo + github 搭建博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-06T16:58:18+08:00" content="2016-07-06">
-              2016-07-06
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/06/hexo-github-搭建博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/06/hexo-github-搭建博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>等我找个好用的markdown 编辑器</p>
-
-          
-        
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -672,6 +390,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/19/Illegal-group-reference/"
+           data-title="Illegal group reference" data-url="http://yoursite.com/2016/07/19/Illegal-group-reference/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -691,8 +417,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://tva3.sinaimg.cn/crop.27.35.476.476.180/4936a6b8jw8f5ka9c0zrmj20e80e8gn4.jpg"
@@ -735,6 +470,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -838,6 +584,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
